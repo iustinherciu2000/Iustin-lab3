@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+    <form action = "/submit" method = "post">
+
+        <!--This will create a username box to type in your username.
+            This field is required when clicking submit
+        -->
+        <label for = "user">Username: </label>
+        <input type = "username"
+               id = "user"
+               name = "username"
+               required><br><br>
+
+        <!--This will create a password.
+            Password is required.
+        -->
+        <label for = "pass">Password: </label>
+        <input type = "password"
+               id = "pass"
+               name = "password"
+               required><br><br>
+
+        <!--Create Email.
+            Has to be required
+        -->
+        <label for="e-mail">Email: </label>
+        <input type="email"
+               id="e-mail"
+               name="email"
+               required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel"
+               id="phone"
+               name="phone"
+               placeholder="123-456-7890"
+               required><br><br>
+
+        <label for="remember">Remember Me</label>
+        <input type="checkbox"
+               id="remember"
+               name="checkbox"><br><br>
+
+        <!--Select gender; male, female, other-->
+        <label for="male">Male</label>
+        <input type="radio"
+               id="male"
+               name="gender"
+               value="male">
+
+        <label for="female">Female</label>
+        <input type="radio"
+               id="female"
+               name="gender"
+               value="female">
+
+        <label for="other">Other</label>
+        <input type="radio"
+               id="other"
+               name="gender"
+               value="female"><br><br>
+
+        <!--Use fieldset and legend for names and date of birth.-->
+        <fieldset>
+            <legend>Personal Information: </legend>
+                <label for="fname">First Name: </label>
+                <input type="firstName" id="fname" name="firstName">
+                <br><br>
+
+                <label for="lname">Last Name: </label>
+                <input type="lastName" id="lname" name="lastName">
+                <br><br>
+
+                <label for="date">Date of Birth: </label>
+                <input type="date" id="date" name="date" required>
+                <br><br>
+        </fieldset><br><br>
+
+        <label for="country">Select your country</label>
+        <select id="country"
+                name="country">
+                <optgroup label="North America">
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Mexico">Mexico</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="England">England</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Italy">Italy</option>
+                </optgroup>
+                <optgroup label="Asia">
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                    <option value="India">India</option>
+                </optgroup>
+        </select><br><br>
+
+        <label for="message">Tell me about yourself:</label>
+        <textarea name="message" id="message" rows="5" cols="50"></textarea><br><br>
+
+        <label for="program">Choose an IDE:</label>
+        <input list="programs" id="program" name="program">
+        <datalist id="programs">
+            <option value="Java">
+            <option value="C++">
+            <option value="Python">
+            <option value="JavaScript">
+            <option value="React">
+        </datalist><br><br>
+
+        <label for="rating-IDE">How much do you like this IDE? (1-10): </label>
+        <input type="range"
+               id="rating-IDE"
+               name="rating"
+               min="1"
+               max="10"
+               value="1"
+               step="1"><br><br>
+
+        <label for = "FavoriteColor">Color</label>
+        <input type = "color"
+               id = "FavoriteColor"
+               name = "color"><br><br>
+
+        <label for = "dateToday">Today's Date: </label>
+        <input type="datetime-local"
+               id = "dateToday"
+               name = "datetime-local"><br><br>
+
+        <label for = "myfile">Upload File:</label>
+        <input type="file"
+               id = "myfile"
+               name = "myfile"><br><br>
+
+        <input type="hidden"
+               id = "custId"
+               name = "custID"
+               value = "610844"><br><br>
+
+        <label for = "picture">Image:</label><br><br>
+        <input type = "image"
+               id = "picture"
+               name = "image"
+               src = "java.png" height="154" width="327"
+               alt = "Java Picture"><br><br>
+
+        <label for = "month">Current Month:</label>
+        <input type="month"
+               id = "month"
+               name = "month"><br><br>
+
+        <label for = "week">Current Week:</label>
+        <input type="week"
+               id = "week"
+               name = "week"><br><br>
+
+        <label for = "time">Time:</label>
+        <input type="time"
+               id = "time"
+               name = "time"><br><br>
+
+        <label for = "num">Favorite Number:</label>
+        <input type="number"
+               id = "num"
+               name = "number"
+               min="1"
+               max="10"
+               placeholder="Enter a number between 1 to 10"
+               required><br><br>
+
+        <div class="url-container">
+            <label for="website">Website URL:</label>
+            <input type="url" id="website" name="website" placeholder="https://docs.google.com/spreadsheets/d/16Jcj6Q-xWfC_jXMTx1bzP5RN-KQaezD9iTnW7dwEmR0/edit?gid=0#gid=0" required>
+            <small>Enter a valid URL (e.g., https://example.com).</small>
+        </div><br><br>
+
+        <div class="search-container">
+            <label for="search">Search:</label>
+            <input type="search"
+                   id="search"
+                   name="search"
+                   placeholder="Enter your search here">
+        </div><br><br>
+
+        <input type="button"
+               value="Click this button if you like Programming!"><br><br>
+
+        <label for="favorite">Favorite Movie/Show: </label>
+        <input type="text"
+               id="favorite"
+               name="text"
+               title=""><br><br>
+
+        <input type="reset"
+               value="Reset"><br><br>
+
+
+        <input type="button" value="Submit Form">
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* phones, 600px and down  */
+@media(max-width: 600px){
+    p{
+        background-color: aquamarine;
+        font-size: 13px;
+    }
+}
+
+/* portrait tablets and large phones, 600px and up */
+@media(min-width: 600px){
+    p{
+        background-color: aqua;
+        font-size: 15px;
+    }
+}
+
+/* landscape tablets, 768px and up*/
+@media(min-width: 768px){
+    p{
+        background-color: red;
+        font-size: 20px;
+    }
+}
+
+/* laptops/desktop, 992px and up */
+@media(min-width: 992px){
+    p{
+        background-color: orange;
+        font-size: 12px;
+    }
+}
+
+/* large laptops and desktops, 1200px and up */
+@media(min-width: 1200px){
+    p{
+        background-color: burlywood;
+        font-size: 13px;
+    }
+}
